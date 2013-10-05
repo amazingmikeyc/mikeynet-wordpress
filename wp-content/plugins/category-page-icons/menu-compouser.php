@@ -2165,10 +2165,10 @@ if (!class_exists('wpdev_compose')) {
 
         // Write copyright notice if its saved
         function wp_footer() {
-            if ( ( get_option( 'wpdev_mc_copyright' )  == 'On' ) && (! defined('WPDEV_COPYRIGHT')) ) {
+/*            if ( ( get_option( 'wpdev_mc_copyright' )  == 'On' ) && (! defined('WPDEV_COPYRIGHT')) ) {
                 printf(__('Uses wordpress plugins developed by %swww.wpdevelop.com%s'),'<a href="http://www.wpdevelop.com" target="_blank">','</a>','&amp;');
                 define('WPDEV_COPYRIGHT',  1 );
-            }
+            }*/
         }
 
         //   A C T I V A T I O N   A N D   D E A C T I V A T I O N    O F   T H I S   P L U G I N  ///////////////////////////////////////////////////////

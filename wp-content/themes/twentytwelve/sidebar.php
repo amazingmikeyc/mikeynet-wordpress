@@ -11,10 +11,14 @@
 ?>
 <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
 		<div id="secondary" class="widget-area" role="complementary">
+<?php $pagelist = get_pages(array('child_of'=>$post->post_parent)); 
 
-<h2>ALSO:</h2>
+if (sizeof($pagelist)>1) {
+?>
+
+<h2>Other pages:</h2>
 <?php
-$pagelist = get_pages(array('child_of'=>$post->post_parent));
+ }
 //'parent='.$post->post_parent.'&sort_column=menu_order&sort_order=asc');
 $pages = array();
 
