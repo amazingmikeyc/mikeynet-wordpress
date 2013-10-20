@@ -19,6 +19,9 @@
  */
 if ( post_password_required() )
 	return;
+	
+	
+	
 ?>
 
 <div id="comments" class="comments-area">
@@ -26,7 +29,9 @@ if ( post_password_required() )
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
         var disqus_shortname = 'mikeynet'; // required: replace example with your forum shortname
-
+		var disqus_identifier = '<?php echo the_permalink(); ?>';
+		var disqus_url = '<?php echo the_permalink(); ?>';
+		
         /* * * DON'T EDIT BELOW THIS LINE * * */
         (function() {
             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

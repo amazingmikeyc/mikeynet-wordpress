@@ -11,7 +11,7 @@
 ?>
 <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
 		<div id="secondary" class="widget-area" role="complementary">
-<?php $pagelist = get_pages(array('child_of'=>$post->post_parent)); 
+<?php $pagelist = get_pages(array('child_of'=>$post->post_parent, 'sort_column'=>'post_date')); 
 
 if (sizeof($pagelist)>1) {
 ?>

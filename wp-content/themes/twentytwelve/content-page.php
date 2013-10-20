@@ -10,7 +10,7 @@
 //If this is the parent page, load the first page instead
 if ($post->post_parent==0) {
 
-	$pages = get_pages(array('child_of'=>$post->ID));
+	$pages = get_pages(array('child_of'=>$post->ID, 'sort_column'=>'post_date', 'sort_order'=>'DESC'));
 
 	$post = $pages[0];
 	setup_postdata( $post );
